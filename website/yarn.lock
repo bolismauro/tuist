@@ -2357,6 +2357,13 @@
     "@theme-ui/css" "0.3.5"
     deepmerge "^4.2.2"
 
+"@theme-ui/css@0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@theme-ui/css/-/css-0.13.1.tgz#872e80a03af89c8bde21be29dbfd02f53b0b6f83"
+  integrity sha512-O85gC3SLKM7HhFYBTnTuhfLdieY+kZCnSuYG+P5quf3XFJEZTYtpwucoU2NDNALSOAoSgfGb7pgTB9cmNHRB5Q==
+  dependencies:
+    csstype "^3.0.10"
+
 "@theme-ui/css@0.3.5":
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/@theme-ui/css/-/css-0.3.5.tgz#cfd228c74bcc7840a7fe9e507858486ee4d403dc"
@@ -2503,14 +2510,19 @@
     "@theme-ui/core" "0.3.5"
     "@theme-ui/mdx" "0.3.5"
 
-"@theme-ui/typography@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@theme-ui/typography/-/typography-0.3.5.tgz#4e8668e8fa85f703f11fb580ab51535773608ae5"
-  integrity sha512-n6m9HDvBSQmBgd4nbEfUwoT3rLa0FRybUuRjv0ywjlJVmo3GEZhN90xO/BSbZzOKsK0TZBCOve8a4AC1c/iANw==
+"@theme-ui/typography@^0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@theme-ui/typography/-/typography-0.13.1.tgz#e7d0702ea9b69e053d6e0cda9eb9e7279862d399"
+  integrity sha512-ow3Ha541UFKUTCzuqF6IPw3+ipl9oMh+3j0XeZU94DbzIXz6sXk+s102jqIUKmpDwQKRM8KklwU5dzIg7U4sNw==
   dependencies:
+    "@theme-ui/css" "0.13.1"
+    "@types/compass-vertical-rhythm" "^1.4.2"
+    "@types/modularscale" "^2.0.0"
+    "@types/typography" "^0.16.4"
     compass-vertical-rhythm "^1.4.5"
+    csstype "^3.0.10"
     modularscale "^2.0.1"
-    object-assign "^4.1.1"
+    type-fest "^2.5.4"
 
 "@tokenizer/token@^0.1.1":
   version "0.1.1"
@@ -2543,6 +2555,11 @@
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@types/common-tags/-/common-tags-1.8.0.tgz#79d55e748d730b997be5b7fce4b74488d8b26a6b"
   integrity sha512-htRqZr5qn8EzMelhX/Xmx142z218lLyGaeZ3YR8jlze4TATRU9huKKvuBmAJEW4LCC4pnY1N6JAm6p85fMHjhg==
+
+"@types/compass-vertical-rhythm@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@types/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.2.tgz#3282639f12a67bb5cb7426a922c9549b403e32af"
+  integrity sha512-72lOTOvy785zdTcQNtr/jM69gOyaPGdDdyKBSQMPyxFPpZJVxPMqFOC8b1pL2eMauHVe8UNhG4zhwSURFDLTuA==
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -2694,6 +2711,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/modularscale@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/modularscale/-/modularscale-2.0.0.tgz#3514f4cf718489a495b6c3a884d70ff581b72b8c"
+  integrity sha512-YxUTFc4P4+uM3QTuWmiqPSR0Gl3hGDBvl+0o/zTJrQTw2OafuIzT4z+aS3myv3J+GdJD6SbCZHUfakSvCyxr2Q==
+
 "@types/node-fetch@2":
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.7.tgz#20a2afffa882ab04d44ca786449a276f9f6bbf3c"
@@ -2791,6 +2813,11 @@
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
   integrity sha1-EHPEvIJHVK49EM+riKsCN7qWTk0=
+
+"@types/typography@^0.16.4":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@types/typography/-/typography-0.16.4.tgz#ef7e46c6143c869ea78368605e663b3be0a99046"
+  integrity sha512-/dGcnJhnkPVlP1A5wDhRhvfvyqJ9yePHyNKRjcR701vMGjDsTnIN3C+l33blkwijtEoQgN8g1CZhbkks1DyBfw==
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
   version "2.0.3"
@@ -5522,10 +5549,10 @@ csstype@^2.5.7:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.14.tgz#004822a4050345b55ad4dcc00be1d9cf2f4296de"
   integrity sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
 
-csstype@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
-  integrity sha512-+ZAmfyWMT7TiIlzdqJgjMb7S4f1beorDbWbsocyK4RaiqA5RTX3K14bnBWmmA9QEM0gRdsjyyrEmcyga8Zsxmw==
+csstype@^3.0.10, csstype@^3.0.2:
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.10.tgz#2ad3a7bed70f35b965707c092e5f30b327c290e5"
+  integrity sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -16484,6 +16511,11 @@ type-fest@^0.8.0, type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
+
+type-fest@^2.5.4:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.9.0.tgz#7a2d430dd966f52b6bc723da2aaa2c9867530551"
+  integrity sha512-uC0hJKi7eAGXUJ/YKk53RhnKxMwzHWgzf4t92oz8Qez28EBgVTfpDTB59y9hMYLzc/Wl85cD7Tv1hLZZoEJtrg==
 
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"
